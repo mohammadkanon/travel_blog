@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Home</title>
+     <link href="{% static 'style/style.css' %}" rel="stylesheet" >
+     <link rel="stylesheet" href="{% static 'style/owl.carousel.min.css' %}">
+     <link rel="stylesheet" href="{% static 'style/owl.theme.default.min.css' %}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+     <script src="{% static 'js/owl.carousel.js' %}"></script>
+     <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+     <section id="top-bar">
+        <div class="container" id="top-content-bar">
+           <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-2 col-md-2" id="latest-article">
+                <p>Latest Article</p>
+                <i class="fa fa-arrow-right" id="right-icons"></i>
+              </div>
+              <div class="col-sm-6 col-md-6" id="top-article-part">
+                 <p id="top-header-article">It is a long established fact that a reader will be distracted by...</p>
+              </div>
+              <div class="col-sm-3 col-md-3" id="top-contact-part">
+                   <i class="fa fa-envelope" ></i>
+                   <a id="top-email">armanmalikk14@gmail.com</a>
+              </div>
+            </div>
+           </div>
+        </div>
+     </section>
+     <section id="header-section">
+     	 <img src="{% static 'images/logo.png' %}" class="img-responsive" id="logo">
+     	  <div id="line-num-five">
+	     	 <hr id="line-num1">
+	     	 <hr id="line-num2">
+	      </div>
+     	 <div class="container" id="menu-bar">
+             <div class="row">
+                <button id="side-menu-singup" class="side-menu-singup __web-inspector-hide-shortcut__" >
+                          <i class="fa fa-bars side-menu-bar"></i>
+                </button>
+                <button id="side-menu-singout" class="side-menu-singup __web-inspector-hide-shortcut__" >
+                          <p>x</p>
+                </button>
+                 <ul id="main-menu-option">
+                     <li><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'all-blog' %}">Travel Stories</a></li>
+                     <li><a href="{% url 'recent-stories' %}">Recent Stories</a></li>
+                     <li><a href="{% url 'about' %}">About Me</a></li>
+                     <li><a href="{% url 'contact' %}">Contact Me</a></li>
+                 </ul>
+                 <ul id="main-menu-option-mobile">
+                     <li><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'all-blog' %}">Travel Stories</a></li>
+                     <li><a href="{% url 'recent-stories' %}">Recent Stories</a></li>
+                     <li><a href="{% url 'about' %}">About Me</a></li>
+                     <li><a href="{% url 'contact' %}">Contact Me</a></li>
+                 </ul>
+             </div>
+     	 </div>
+     </section><!--Head-section-->
+     {% block content %}
+     {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <section id="page-details-section">
+     <p id="page-datails-article"><a href="{% url 'index' %}">Home</a>  >  About Me</p>
+ </section><!--page-details-section-->
+
+<section id="about-me-body">
+  <div class="container">
+     <div class="row" id="about-me-row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+           <div class="col-md-6 col-sm-6 col-xs-12">
+              <img src="{% static 'images/person.jpg' %}" id="about-profile-img" >
+           </div>
+           <div class="col-sm-6 col-md-6 col-xs-12" id="latest-person-info">
+                   <p id="person-info-first">Hi ! I am <span id="person-name">Arman malik<span></p>
+                   <p id="person-info-second" class="sub-title-class">Adventure travel photography & <br>perfossional blogger</p>
+                   <p id="person-info-third">Join me as i share entertaining stories, beautiful images and useful travell tips with you
+                   around the world .I already travell 31 countries in last 9 year. So i have a great knowledge around the world.</p>
+                   <ul id="personal-info-socialmedia" class="social-media-class">
+                    <li><i class="fa fa-facebook-f"></i></li>
+                      <li><i class="fa fa-twitter"></i></li>
+                      <li><i class="fa fa-google-wallet"></i></li>
+                      <li><i class="fa fa-youtube"></i></li>
+                   </ul>
+                   <div class="col-sm-12 col-xs-12" id="button-like-counter">
+                      <div class="col-sm-6 col-xs-6" id="button-border-last">
+                         <a id="countries-viste1">42</a><br>
+                         <a id="countries-viste2">Countries Visted</a><br>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                          <a id="countries-viste1">864</a><br>
+                         <a id="countries-viste2">Blog Written</a><br>
+                      </div>
+                   </div>
+            </div>
+        </div>
+     </div>
+  </div>
+</section><!--About-Me-section-->
+
+<section id="about-me-paragraph">
+  <div class="container">
+      <div class="row" id="about-paragraph-row">
+           <div class="col-md-12 col-sm-12 col-xs-12">
+              <div id="text-moment-text-box">
+                  <p id="best-moment-title">Know About Myself</p>
+                  <div id="line-num-one">
+                    <hr id="best-moment-line1">
+                    <hr id="best-moment-line2">
+                    <hr id="best-moment-line3">
+                  </div>
+                  <p id="best-moment-para" class="toggle-class-one">It is a long established that a reader will be distreacted by the readable<br> content of a page when looking at its layout.
+                  </p>
+              </div>
+                   <img src="{% static 'images/myself.png' %}" id="single-post-main-image" class="img-responsive">
+                   <br>
+                   <div id="the-main-articles">
+                        <p id="single-article-part1">There’s a lot that goes into great online content. In this article, I’ve compiled six of my top ingredients to compelling, effective content that will help you achieve all of your content marketing goals and objectives. We live in a digital age where practically everyone Google searches to get the answers they need. Here’s how to write content to maximize the likelihood of being found in.</p>
+                        <p id="single-article-part1">There’s a lot that goes into great online content. In this article, I’ve compiled six of my top ingredients to compelling, effective content that will help you achieve all of your content marketing goals and objectives. We live in a digital age where practically everyone Google searches to get the answers they need. Here’s how to write content to maximize the likelihood of being found in.</p>
+                        <img src="{% static 'images/single-main.png' %}" id="the-midle-single-pic" class="img-responsive">
+                        <p id="single-article-part1">There’s a lot that goes into great online content. In this article, I’ve compiled six of my top ingredients to compelling, effective content that will help you achieve all of your content marketing goals and objectives. We live in a digital age where practically everyone Google searches to get the answers they need. Here’s how to write content to maximize the likelihood of being found in.</p>
+                        <p id="single-article-part1">There’s a lot that goes into great online content. In this article, I’ve compiled six of my top ingredients to compelling, effective content that will help you achieve all of your content marketing goals and objectives. We live in a digital age where practically everyone Google searches to get the answers they need. Here’s how to write content to maximize the likelihood of being found in.</p>
+                        <img src="{% static 'images/single-page-video.png' %}" id="the-midle-single-pic" class="img-responsive">
+                   </div>
+                </div>
+      </div>
+  </div>
+</section><!--About-Me-paragraph-->
+
+
+ <section id="I-am-featured-in">
+     <div class="container">
+        <div class="row" id="I-am-featured-row">
+             <div id="text-moment-text-box">
+              <p id="best-moment-title">I Am Featured In</p>
+              <div id="line-num-four">
+                  <hr id="best-moment-line1">
+                  <hr id="best-moment-line2">
+                  <hr id="best-moment-line3">
+               </div>
+              <p id="best-moment-para" class="toggle-class-four">It is a long established that a reader will be distreacted by the readable<br> content of a page when looking at its layout.
+              </p>
+            </div>
+            <div id="single-page-logo-list">
+               <ul id="logo-list">
+                 <li><img src="{% static 'images/v.logo.png' %}" id="list-logo"></li>
+                 <li><img src="{% static 'images/logo3.png' %}" id="list-logo"></li>
+                 <li><img src="{% static 'images/logo4.png' %}" id="list-logo"></li>
+                 <li><img src="{% static 'images/logo1.png' %}" id="list-logo"></li>
+                 <li><img src="{% static 'images/logo5.png' %}" id="list-logo"></li>
+                 <li><img src="{% static 'images/logo2.png' %}" id="list-logo"></li>
+
+                </ul>
+            </div>
+        </div>
+     </div>
+ </section><!--I-am-featured-in-->
+
+ <section id="footer-section">
+    <div class="container">
+       <div class="row" id="footer-row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+             <div class="col-md-3 col-sm-3 col-xs-6" id="footer-main-section">
+                <img src="{% static 'images/logo.png' %}" id="footer-logo">
+                <p id="footer-article">Contrary to popular belife,Lorem psum is not smiply random text.It has roots in a pice of classical Latin literature.</p>
+                <div class="col-sm-6" id="footer-input-section">
+                <input type="" name="" placeholder="Enter Your Email" id="email-input">
+                </div>
+                <div class="col-sm-6">
+                <button id="footer-button">SUBSCRIBE</button>
+                </div>
+                <div>
+                <p id="footer-copy-right">@ 2018 All Copy Right By Vaidroad</p>
+                </div>
+             </div>
+             <div class="col-md-3 col-sm-3 col-xs-6" id="footer-main-section">
+                <p id="quick-link-title">Quick Link</p>
+                <ul id="footer-list">
+                    <li><a>About Me</a></li>
+                    <li><a>Description</a></li>
+                    <li><a>Tour Story</a></li>
+                    <li><a>Hotel & Resort</a></li>
+                </ul>
+             </div>
+             <div class="col-md-3 col-sm-3 col-xs-6" id="footer-main-section">
+                <p id="twitter-title">Twitter Feed</p>
+                 <p id="footer-article">Contrary to popular belife,Lorem psum is not smiply random text.It has roots in a pice of classical Latin literature.</p>
+                 <p id="footer-article">Contrary to popular belife,Lorem psum is not smiply random text.It has roots in a pice of classical Latin literature.</p>
+             </div>
+             <div class="col-md-3 col-sm-3 col-xs-6" id="footer-main-section">
+                <p id="twitter-title">Contact Information</p>
+                <div id="location-box">
+                <span id="location-title">Locaton:</span><span>Gaibandha,Materpara</span>
+                </div>
+                <div id="location-box">
+                <span id="location-title">Email:</span><span>Vaidroad@gmail.com</span>
+                </div>
+                <div id="location-box">
+                <span id="location-title">Phone:</span><span>+880176543854</span>
+                </div>
+                <div id="location-box">
+                <span id="location-title">Website:</span><span>www.vaidroad.com</span>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section><!--Latest-artcle-section-->
+
+{% endblock %}
